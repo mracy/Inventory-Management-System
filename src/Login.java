@@ -6,18 +6,18 @@ import java.sql.*;
 public class Login extends javax.swing.JFrame {
 
     public Login() {
-        initComponents();
-        setLocationRelativeTo(null);
-        setLayoutResizable(false); // Method to set resizable property
-
-    }
+    initComponents();
+    setLocationRelativeTo(null);
+    setResizable(false); // Method to set resizable property
+    setTitle("Tirupati Traders"); // Set the title of the JFrame
+}
 
     private void setLayoutResizable(boolean resizable) {
         this.setResizable(resizable);
     }
 
     @SuppressWarnings("unchecked")
-    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">                          
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
@@ -114,9 +114,9 @@ public class Login extends javax.swing.JFrame {
         );
 
         pack();
-    }// </editor-fold>//GEN-END:initComponents
+    }// </editor-fold>                        
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {                                         
         // TODO add your handling code here:
         String email = txtEmail.getText();
         String password = txtPassword.getText();
@@ -142,19 +142,19 @@ public class Login extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, e);
 
         }
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }                                        
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {                                         
         // TODO add your handling code here:
         int a = JOptionPane.showConfirmDialog(null, "Do you want to exit the application?", "Exit Confirmation", JOptionPane.YES_NO_OPTION);
         if (a == 0) {
             System.exit(0);
         }
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }                                        
 
-    private void txtEmailActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtEmailActionPerformed
+    private void txtEmailActionPerformed(java.awt.event.ActionEvent evt) {                                         
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtEmailActionPerformed
+    }                                        
 
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
@@ -188,7 +188,7 @@ public class Login extends javax.swing.JFrame {
         });
     }
 
-    // Variables declaration - do not modify//GEN-BEGIN:variables
+    // Variables declaration - do not modify                     
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
@@ -196,5 +196,5 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JTextField txtEmail;
     private javax.swing.JPasswordField txtPassword;
-    // End of variables declaration//GEN-END:variables
+    // End of variables declaration                   
 }
